@@ -1,0 +1,398 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/fonts.css);
+
+.page {
+    font-family: "Inter", Arial, sans-serif;
+    background-color: #101010;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
+    font-family: 'Lato';
+}
+
+.logo {}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu {}
+
+.header__categories {
+    list-style-type: none;
+    display: flex;
+    gap: 32px;
+}
+
+.delay_x-small {
+    --delay: .1s;
+}
+
+.delay_small {
+    --delay: .2s;
+}
+
+.delay_medium {
+    --delay: .3s;
+}
+
+.delay_large {
+    --delay: .4s;
+}
+
+.delay_x-large {
+    --delay: .5s;
+}
+
+.delay_xx-large {
+    --delay: .6s;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    transition: opacity .3s ease;
+}
+
+.header__link_border {
+    padding: 12px 18px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+
+.header__toggle-darkmode {
+    height: 18px;
+    width: 18px;
+    margin-left: 24px;
+}
+
+.main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.intro {
+    min-height: calc(100vh -100px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.intro__title {
+    color: #fff;
+    font-size: 80px;
+    margin: 30px 0 30px 0;
+    letter-spacing: 12px;
+    font-family: 'Staatliches', cursive;
+}
+
+.intro__subtitle {
+    color: #fff;
+    margin: 0 0 100px 0;
+
+}
+
+.about {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 32px;
+}
+
+.about__title {
+    color: #fff;
+    font-size: 78px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+}
+
+.about__text-container {
+    max-width: 50%;
+    color: #fff;
+}
+
+.about__text {
+    font-family: 'Lato';
+    font-size: 18px;
+}
+
+.about__image {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.projects {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.projects__title {
+    color: #fff;
+    font-size: 78px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+}
+
+.project__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.project {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.project__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+.project:hover .project__overlay {
+    opacity: 1;
+}
+
+.project__text-container {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project__tech {
+    text-align: center;
+}
+
+.project__overlay {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.project__icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.project__icon {
+    width: 30px;
+    height: 30px;
+}
+
+.project__icon:last-of-type {
+    width: 24px;
+    height: 24px;
+}
+
+.skills {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.skills__title {
+    color: #fff;
+    font-size: 78px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+}
+
+.skills__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 80px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.skill__image {
+    width: 70px;
+    height: 70px;
+}
+
+.skill__text {
+    color: #fff;
+
+}
+
+.contacts {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts__title {
+    color: #fff;
+    font-size: 78px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.contacts__text {
+    color: #fff;
+    font-family: 'Lato';
+    max-width: 360px;
+    text-align: center;
+}
+
+.contacts__button {
+    margin-top: 54px;
+    color: #fff;
+    padding: 18px 60px 18px 60px;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+
+.footer {}
+
+.sidenav {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.sidenav__social-icons {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.sidenav__icon-link {
+    text-decoration: none;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidenav__icon {
+    width: 22px;
+    height: 22px;
+    transition: opacity .3s ease;
+}
+
+.sidenav__social-icon:nth-child(1) .sidenav__icon {
+    width: 26px;
+    height: 26px;
+}
+
+@keyframes up {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes down {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.animUp {
+    animation: up 0.8s;
+}
+
+.animDown {
+    animation: down 0.8s;
+}
+
+.animAppear {
+    animation: appear 0.8s;
+}
+
+.animDisppear {
+    animation: disappear 0.8s;
+}
+
+.animOpacity:hover {
+    opacity: 0.6;
+}
