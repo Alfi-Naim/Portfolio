@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="bower_components/aos/dist/aos.js"></script>
+
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="./index.css"> -->
 </head>
 
 <body class="page">
@@ -16,94 +18,88 @@
             <div class="header__container">
                 <nav class="header__menu">
                     <ul class="header__categories">
-                        <li class="header__category"><a href="" class="header__link animOpacity">Home</a></li>
-                        <li class="header__category"><a href="" class="header__link animOpacity">About</a></li>
-                        <li class="header__category"><a href="" class="header__link animOpacity">Skills</a></li>
-                        <li class="header__category"><a href="" class="header__link animOpacity">Projects</a></li>
-                        <li class="header__category"><a href="" class="header__link animOpacity">Contact</a></li>
-                        <li class="header__category"><a href="" class="header__link header__link_border animOpacity">Resume</a></li>
-                        <!--<li class="header__category animDown delay_x-small"><a href="" class="header__link animOpacity">Home</a></li>
-                        <li class="header__category animDown delay_small"><a href="" class="header__link animOpacity">About</a></li>
-                        <li class="header__category animDown delay_medium"><a href="" class="header__link animOpacity">Skills</a></li>
-                        <li class="header__category animDown delay_large"><a href="" class="header__link animOpacity">Projects</a></li>
-                        <li class="header__category animDown delay_x-large"><a href="" class="header__link animOpacity">Contact</a></li>
-                        <li class="header__category animDown delay_xx-large"><a href="" class="header__link header__link_border animOpacity">Resume</a></li> -->
+                        <li class="header__category" data-aos="fade-down" data-aos-duration="800"><a href="" class="header__link animOpacity">Home</a></li>
+                        <li class="header__category" data-aos="fade-down" data-aos-duration="900"><a href="" class="header__link animOpacity">About</a></li>
+                        <li class="header__category" data-aos="fade-down" data-aos-duration="1000"><a href="" class="header__link animOpacity">Skills</a></li>
+                        <li class="header__category" data-aos="fade-down" data-aos-duration="1100"><a href="" class="header__link animOpacity">Projects</a></li>
+                        <li class="header__category" data-aos="fade-down" data-aos-duration="1200"><a href="" class="header__link animOpacity">Contact</a></li>
+                        <li class="header__category" data-aos="fade-down" data-aos-duration="1300"><a href="" class="header__link header__link_border animOpacity">Resume</a></li>
                     </ul>
                 </nav>
-                <img src="<%=require('./images/sun.svg')%>" alt="" class="header__toggle-darkmode animOpacity">
+                <img src="<%=require('./images/sun.svg')%>" alt="" data-aos="zoom-in" data-aos-duration="1500" class="header__toggle-darkmode animOpacity">
             </div>
         </header>
         <main class="main">
             <section class="intro">
                 <div class="intro__text-container">
-                    <h1 class="intro__title">Alfi Naim</h1>
-                    <h2 class="intro__subtitle">Full Stack web developer / Android application developer</h2>
+                    <h1 class="intro__title" data-aos="fade-up" data-aos-duration="800">Alfi Naim</h1>
+                    <h2 class="intro__subtitle" data-aos="fade-up" data-aos-duration="1000">Full Stack web developer / Android application developer</h2>
                 </div>
             </section>
             <section class="about">
-                <h2 class="about__title">About</h2>
+                <h2 class="about__title" data-aos="fade-up" data-aos-duration="800">About</h2>
                 <div class="about__container">
                     <div class="about__text-container">
-                        <p class="about__text">Hello I'm Alfi, I'm web and application developer with a lot of experience in app development. I live in Yavne, married and the father of a one-year-old girl. I like to develop apps and websites in my spare time, like to learn new things and challenge myself.</p>
-                        <p class="about__text">For the past three years I have been working for a financial company in Bnei Brak as an app developer for Android. In collaboration with the web development team.</p>
-                        <p class="about__text">Recently I have finished Pructicum’s 8-month intensive program designed to train talents to be successful Web Developers. And right now I'm looking for my way in web development.</p>
+                        <p class="about__text" data-aos="fade-up" data-aos-duration="800">Hello I'm Alfi, I'm web and application developer with a lot of experience in app development. I live in Yavne, married and the father of a one-year-old girl. I like to develop apps and websites in my spare time, like to learn new things and challenge myself.</p>
+                        <p class="about__text" data-aos="fade-up" data-aos-duration="800">For the past three years I have been working for a financial company in Bnei Brak as an app developer for Android. In collaboration with the web development team.</p>
+                        <p class="about__text" data-aos="fade-up" data-aos-duration="800">Recently I have finished Pructicum’s 8-month intensive program designed to train talents to be successful Web Developers. And right now I'm looking for my way in web development.</p>
                     </div>
-                    <img src="<%=require('./images/profile-pic.jpg')%>" alt="" class="about__image">
+                    <img src="<%=require('./images/profile-pic.jpg')%>" data-aos="zoom-in" data-aos-duration="800" alt="" class="about__image">
                 </div>
             </section>
             <section class="skills">
-                <h2 class="skills__title">Skills</h2>
+                <h2 class="skills__title" data-aos="fade-up" data-aos-duration="800">Skills</h2>
                 <ul class="skills__list">
-                    <li class="skill">
+                    <li class="skill" data-aos="flip-left" data-aos-duration="400">
                         <img src="<%=require('./images/html.svg')%>" alt="" class="skill__image">
                         <p class="skill__text">HTML</p>
                     </li>
-                    <li class="skill">
+                    <li class="skill" data-aos="flip-left" data-aos-duration="400">
                         <img src="<%=require('./images/css.svg')%>" alt="" class="skill__image">
                         <p class="skill__text">CSS</p>
                     </li>
-                    <li class="skill">
+                    <li class="skill" data-aos="flip-left" data-aos-duration="400">
                         <img src="<%=require('./images/js.svg')%>" alt="" class="skill__image">
                         <p class="skill__text">JS</p>
                     </li>
-                    <li class="skill">
+                    <li class="skill" data-aos="flip-left" data-aos-duration="400">
                         <img src="<%=require('./images/react.svg')%>" alt="" class="skill__image">
                         <p class="skill__text">React</p>
                     </li>
-                    <li class="skill">
+                    <li class="skill" data-aos="flip-left" data-aos-duration="1000">
                         <img src="<%=require('./images/nodejs.svg')%>" alt="" class="skill__image">
                         <p class="skill__text">NodeJS</p>
                     </li>
-                    <li class="skill">
+                    <li class="skill" data-aos="flip-left" data-aos-duration="1000">
                         <img src="<%=require('./images/mongo.svg')%>" alt="" class="skill__image">
                         <p class="skill__text">MongoDB</p>
                     </li>
-                    <li class="skill">
+                    <li class="skill" data-aos="flip-left" data-aos-duration="1000">
                         <img src="<%=require('./images/express-white.svg')%>" alt="" class="skill__image">
                         <p class="skill__text">Express</p>
                     </li>
-                    <li class="skill">
+                    <li class="skill" data-aos="flip-left" data-aos-duration="1000">
                         <img src="<%=require('./images/git.svg')%>" alt="" class="skill__image">
                         <p class="skill__text">Git</p>
                     </li>
-                    <li class="skill">
+                    <li class="skill" data-aos="flip-left" data-aos-duration="1500">
                         <img src="<%=require('./images/java.svg')%>" alt="" class="skill__image">
                         <p class="skill__text">Java</p>
                     </li>
-                    <li class="skill">
+                    <li class="skill" data-aos="flip-left" data-aos-duration="1500">
                         <img src="<%=require('./images/android.svg')%>" alt="" class="skill__image">
                         <p class="skill__text">Android</p>
                     </li>
-                    <li class="skill">
+                    <li class="skill" data-aos="flip-left" data-aos-duration="1500">
                         <img src="<%=require('./images/firebase.svg')%>" alt="" class="skill__image">
                         <p class="skill__text">Firebase</p>
                     </li>
                 </ul>
             </section>
             <section class="projects">
-                <h2 class="projects__title">Projects</h2>
+                <h2 class="projects__title" data-aos="fade-up" data-aos-duration="800">Projects</h2>
                 <ul class="project__list">
-                    <li class="project">
+                    <li class="project" data-aos="zoom-out-left" data-aos-duration="900">
                         <img src="<%=require('./images/news-explorer.png')%>" alt="" class="project__image">
                         <div class="project__overlay">
                             <div class="project__text-container">
@@ -116,7 +112,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="project">
+                    <li class="project" data-aos="zoom-out" data-aos-duration="1100">
                         <img src="<%=require('./images/around-us.png')%>" alt="" class="project__image">
                         <div class="project__overlay">
                             <div class="project__text-container">
@@ -129,7 +125,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="project">
+                    <li class="project" data-aos="zoom-out-right" data-aos-duration="1300">
                         <img src="<%=require('./images/portland.png')%>" alt="" class="project__image">
                         <div class="project__overlay">
                             <div class="project__text-container">
@@ -145,25 +141,27 @@
                 </ul>
             </section>
             <section class="contacts">
-                <h2 class="contacts__title">Get In Touch</h2>
-                <p class="contacts__text">I am open to new job opportunities in the Web field, contact me by email to hire me or just say hi :)</p>
-                <button class="contacts__button">Email Me</button>
+                <h2 class="contacts__title" data-aos="fade-up" data-aos-duration="800">Get In Touch</h2>
+                <p class="contacts__text" data-aos="fade-up" data-aos-duration="1100">I am open to new job opportunities in the Web field, contact me by email to hire me or just say hi :)</p>
+                <button class="contacts__button" data-aos="fade-up" data-aos-duration="1300">Email Me</button>
             </section>
         </main>
-        <!-- <footer class="footer"></footer>  -->
+        <footer class="footer">
+            <p class="footer__text">Design and built by Alfi Naim © 2021</p>
+        </footer> 
         <div class="sidenav">
             <ul class="sidenav__social-icons">
-                <li class="sidenav__social-icon animAppear delay_large">
+                <li class="sidenav__social-icon" data-aos="flip-left" data-aos-duration="500">
                     <a href="" class="sidenav__icon-link">
                         <img src="<%=require('./images/github-white.svg')%>" alt="" class="sidenav__icon animOpacity">
                     </a>
                 </li>
-                <li class="sidenav__social-icon animAppear delay_x-large">
+                <li class="sidenav__social-icon" data-aos="flip-left" data-aos-duration="800">
                     <a href="" class="sidenav__icon-link">
                         <img src="<%=require('./images/linkedin.svg')%>" alt="" class="sidenav__icon animOpacity">
                     </a>
                 </li>
-                <li class="sidenav__social-icon animAppear delay_xx-large">
+                <li class="sidenav__social-icon" data-aos="flip-left" data-aos-duration="1200">
                     <a href="" class="sidenav__icon-link">
                         <img src="<%=require('./images/email-white.svg')%>" alt="" class="sidenav__icon animOpacity">
                     </a>
