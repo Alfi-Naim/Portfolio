@@ -1,10 +1,10 @@
-1. footer
+1. footer   
 2. cursors
-3. hover animations
-4. links
+3. hover animations -> button
+4. links -> resume
 5. image att
 6. resize screen
-7. email button
+7. email button -> button
 8. light mode
 9. about text
 10. html title + icon
