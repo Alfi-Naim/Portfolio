@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 
-<body class="page light-theme">
+<body class="page">
     <div class="page-content" id="home">
         <header class="header">
             <img src="" alt="" class="logo">
@@ -32,10 +32,7 @@
                                 class="header__link header__link_border animOpacity">Resume</a></li>
                     </ul>
                 </nav>
-                <img src="<%=require('./images/sun.svg')%>" alt="dark-mode" data-aos="zoom-in" data-aos-duration="1500"
-                    class="header__theme-icon header__theme-icon_theme_light header__theme-icon_invisible">
-                <img src="<%=require('./images/moon.svg')%>" alt="dark-mode" data-aos="zoom-in" data-aos-duration="1500"
-                    class="header__theme-icon header__theme-icon_theme_dark">
+                <img src="<%=require('./images/sun.svg')%>" alt="dark-mode" class="header__theme-icon">
             </div>
         </header>
         <main class="main">
@@ -188,19 +185,19 @@
                 <li class="sidenav__social-icon" data-aos="flip-left" data-aos-duration="500">
                     <a href="https://github.com/Alfi-Naim" target="_blank" class="sidenav__icon-link">
                         <img src="<%=require('./images/github-white.svg')%>" alt="github"
-                            class="sidenav__icon animOpacity">
+                            class="sidenav__icon sidenav__icon_type_github animOpacity">
                     </a>
                 </li>
                 <li class="sidenav__social-icon" data-aos="flip-left" data-aos-duration="800">
                     <a href="https://www.linkedin.com/in/alfi-naim/" target="_blank" class="sidenav__icon-link">
                         <img src="<%=require('./images/linkedin.svg')%>" alt="linkedin"
-                            class="sidenav__icon animOpacity">
+                            class="sidenav__icon sidenav__icon_type_linkedin animOpacity">
                     </a>
                 </li>
                 <li class="sidenav__social-icon" data-aos="flip-left" data-aos-duration="1200">
                     <a href="mailto:alfons.devs@gmail.com" class="sidenav__icon-link">
                         <img src="<%=require('./images/email-white.svg')%>" alt="email"
-                            class="sidenav__icon animOpacity">
+                            class="sidenav__icon sidenav__icon_type_email animOpacity">
                     </a>
                 </li>
             </ul>

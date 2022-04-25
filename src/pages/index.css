@@ -59,12 +59,8 @@
 .header__theme-icon{
     height: 18px;
     width: 18px;
-    margin-left: 24px;
     cursor: pointer;
-}
-
-.header__theme-icon_invisible {
-    display: none;
+    margin: 0 0 0 24px;
 }
 
 .main {
@@ -90,7 +86,6 @@
 .intro__subtitle {
     color: var(--main-color);
     margin: 0 0 100px 0;
-
 }
 
 .about {
@@ -181,14 +176,7 @@
     flex-direction: column;
     align-items: center;
     padding: 0 24px 0 24px;
-}
-
-.project__title {
-    color: var(--main-color);
-}
-
-.project__tech {
-    color: var(--main-color);
+    color: #fff;
 }
 
 .project__tech {
