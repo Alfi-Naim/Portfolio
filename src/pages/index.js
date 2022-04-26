@@ -14,16 +14,16 @@ const emailWhite = new URL("../images/email-white.svg", import.meta.url);
 const emailBlack = new URL("../images/email-black.svg", import.meta.url);
 
 window.onbeforeunload = function () {
-  window.scrollTo(0,0);
-}
+  window.scrollTo(0, 0);
+};
 
 AOS.init({
-  easing: 'ease-in-out',
+  easing: "ease-in-out",
   once: true,
 });
 
-let darkmode = true; //take from storage or system settings
-// let darkmode = localStorage.getItem('darkmod-theme');  //take from storage or system settings
+let darkmode = localStorage.getItem("theme");
+if(darkmode == null) darkmode = 'dark';
 
 const page = document.querySelector(".page");
 const themeIcon = document.querySelector(".header__theme-icon");
@@ -31,23 +31,27 @@ const githubIcon = document.querySelector(".sidenav__icon_type_github");
 const linkedInIcon = document.querySelector(".sidenav__icon_type_linkedin");
 const emailIcon = document.querySelector(".sidenav__icon_type_email");
 
-function toggleTheme(){
-  // localStorage.setItem('darkmode-theme', !darkmode);
-  darkmode = !darkmode;
+function toggleTheme() {
+  darkmode = darkmode == 'dark' ? 'light' : 'dark';
+  localStorage.setItem("theme", darkmode);
   initTheme();
 }
 
-function initTheme(){
-  // darkmode = localStorage.getItem('darkmod-theme');
-  darkmode ? page.classList.remove("light-theme") : page.classList.add("light-theme");
-  darkmode ? themeIcon.setAttribute("src", sun) : themeIcon.setAttribute("src", moon);
-  darkmode ? githubIcon.setAttribute("src", githubWhite) : githubIcon.setAttribute("src", githubBlack);
-  darkmode ? linkedInIcon.setAttribute("src", linkedInWhite) : linkedInIcon.setAttribute("src", linkedInBlack);
-  darkmode ? emailIcon.setAttribute("src", emailWhite) : emailIcon.setAttribute("src", emailBlack);
+function initTheme() {
+  if (darkmode == 'dark') {
+    page.classList.remove("light-theme");
+    themeIcon.setAttribute("src", sun);
+    githubIcon.setAttribute("src", githubWhite);
+    linkedInIcon.setAttribute("src", linkedInWhite);
+    emailIcon.setAttribute("src", emailWhite);
+  } else {
+    page.classList.add("light-theme");
+    themeIcon.setAttribute("src", moon);
+    githubIcon.setAttribute("src", githubBlack);
+    linkedInIcon.setAttribute("src", linkedInBlack);
+    emailIcon.setAttribute("src", emailBlack);
+  }
 }
 
 themeIcon.addEventListener("click", toggleTheme);
-
 initTheme();
-
-console.log(localStorage.getItem('darkmode'));
