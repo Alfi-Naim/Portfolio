@@ -1,4 +1,4 @@
-1. footer   
+1. footer -> add icons
 2. cursors
 3. hover animations -> button
 4. links -> resume
@@ -8,3 +8,4 @@
 8. light mode
 9. about text
 10. html title + icon
+11. menu
