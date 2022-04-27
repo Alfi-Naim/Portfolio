@@ -36,9 +36,12 @@ if (darkmode == null) darkmode = "dark";
 const page = document.querySelector(".page");
 const themeIcon = document.querySelector(".header__theme-icon");
 const menuIcon = document.querySelector(".header__menu-icon");
-const githubIcon = document.querySelector(".sidenav__icon_type_github");
-const linkedInIcon = document.querySelector(".sidenav__icon_type_linkedin");
-const emailIcon = document.querySelector(".sidenav__icon_type_email");
+const asideGithubIcon = document.querySelector(".sidenav__icon_type_github");
+const asideLinkedInIcon = document.querySelector(".sidenav__icon_type_linkedin");
+const asideEmailIcon = document.querySelector(".sidenav__icon_type_email");
+const menuGithubIcon = document.querySelector(".menu__icon_type_github");
+const menuLinkedInIcon = document.querySelector(".menu__icon_type_linkedin");
+const menuEmailIcon = document.querySelector(".menu__icon_type_email");
 const menuCloseIcon = document.querySelector(".menu__close-icon");
 
 const menuPopup = new MenuPopup(".menu", ".page", ".menu__link");
@@ -53,17 +56,23 @@ function initTheme() {
   if (darkmode == "dark") {
     page.classList.remove("light-theme");
     themeIcon.setAttribute("src", sun);
-    githubIcon.setAttribute("src", githubWhite);
-    linkedInIcon.setAttribute("src", linkedInWhite);
-    emailIcon.setAttribute("src", emailWhite);
+    asideGithubIcon.setAttribute("src", githubWhite);
+    asideLinkedInIcon.setAttribute("src", linkedInWhite);
+    asideEmailIcon.setAttribute("src", emailWhite);   
+    menuGithubIcon.setAttribute("src", githubWhite);
+    menuLinkedInIcon.setAttribute("src", linkedInWhite);
+    menuEmailIcon.setAttribute("src", emailWhite);
     menuIcon.setAttribute("src", menuWhite);
     menuCloseIcon.setAttribute("src", closeMenuWhite);
   } else {
     page.classList.add("light-theme");
     themeIcon.setAttribute("src", moon);
-    githubIcon.setAttribute("src", githubBlack);
-    linkedInIcon.setAttribute("src", linkedInBlack);
-    emailIcon.setAttribute("src", emailBlack);
+    asideGithubIcon.setAttribute("src", githubBlack);
+    asideLinkedInIcon.setAttribute("src", linkedInBlack);
+    asideEmailIcon.setAttribute("src", emailBlack);
+    menuGithubIcon.setAttribute("src", githubBlack);
+    menuLinkedInIcon.setAttribute("src", linkedInBlack);
+    menuEmailIcon.setAttribute("src", emailBlack);
     menuIcon.setAttribute("src", menuBlack);
     menuCloseIcon.setAttribute("src", closeMenuBlack);
   }
