@@ -1,0 +1,17 @@
+.page {
+    font-family: "Inter", Arial, sans-serif;
+    background-color: #101010;
+    box-sizing: border-box;
+    position: relative;
+    transition: color 1s, background-color 1s;
+    --main-color: #fff;
+    --oposite-color: #000;
+    --menu-color: #282828;
+}
+
+@media screen and (max-width: 800px) {
+
+    .page {
+        padding-top: 50px;
+    }
+}

@@ -7,260 +7,244 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="bower_components/aos/dist/aos.js"></script>
-
     <title>Document</title>
-    <style>
-        .logo {width: 24px;
-        height: 24px;
-    color: #fff;}
-    </style>
 </head>
 
-<body class="page">
-    <div class="page-content" id="home">
-        <header class="header">
-            <svg class="logo" enable-background="new 0 0 207.628 207.628" viewBox="0 0 207.628 207.628" width="288" height="288">
-                <circle cx="103.814" cy="103.814" r="45.868" fill="currentColor" class="color000 svgShape"></circle>
-                <path d="M103.814 157.183c-29.427 0-53.368-23.941-53.368-53.368s23.941-53.368 53.368-53.368 53.368 23.941 53.368 53.368S133.241 157.183 103.814 157.183zM103.814 65.446c-21.156 0-38.368 17.212-38.368 38.368s17.212 38.368 38.368 38.368 38.368-17.212 38.368-38.368S124.97 65.446 103.814 65.446zM103.814 39.385c-4.142 0-7.5-3.358-7.5-7.5V7.5c0-4.142 3.358-7.5 7.5-7.5s7.5 3.358 7.5 7.5v24.385C111.314 36.027 107.956 39.385 103.814 39.385zM103.814 207.628c-4.142 0-7.5-3.358-7.5-7.5v-24.385c0-4.142 3.358-7.5 7.5-7.5s7.5 3.358 7.5 7.5v24.385C111.314 204.271 107.956 207.628 103.814 207.628zM200.128 111.314h-24.385c-4.142 0-7.5-3.358-7.5-7.5s3.358-7.5 7.5-7.5h24.385c4.142 0 7.5 3.358 7.5 7.5S204.271 111.314 200.128 111.314zM31.885 111.314H7.5c-4.142 0-7.5-3.358-7.5-7.5s3.358-7.5 7.5-7.5h24.385c4.142 0 7.5 3.358 7.5 7.5S36.027 111.314 31.885 111.314zM154.676 60.452c-1.919 0-3.839-.732-5.303-2.197-2.929-2.929-2.929-7.678 0-10.606l17.243-17.242c2.929-2.929 7.678-2.93 10.606 0 2.929 2.929 2.929 7.678 0 10.606l-17.243 17.242C158.515 59.72 156.595 60.452 154.676 60.452zM35.709 179.419c-1.919 0-3.839-.732-5.303-2.197-2.929-2.929-2.929-7.678 0-10.606l17.243-17.243c2.929-2.929 7.678-2.929 10.606 0 2.929 2.929 2.929 7.678 0 10.606l-17.243 17.243C39.548 178.687 37.629 179.419 35.709 179.419zM171.918 179.419c-1.919 0-3.839-.732-5.303-2.197l-17.243-17.243c-2.929-2.929-2.929-7.678 0-10.606 2.929-2.929 7.678-2.929 10.606 0l17.243 17.243c2.929 2.929 2.929 7.678 0 10.606C175.757 178.687 173.838 179.419 171.918 179.419zM52.952 60.452c-1.919 0-3.839-.732-5.303-2.197L30.406 41.013c-2.929-2.929-2.929-7.677 0-10.606 2.929-2.929 7.678-2.93 10.606 0l17.243 17.242c2.929 2.929 2.929 7.677 0 10.606C56.791 59.72 54.872 60.452 52.952 60.452z" fill="currentColor" class="testColor"></path>
-            </svg>
-            <!-- <img src="./" alt="" class="logo"> -->
-            <div class="header__container">
-                <nav class="header__menu">
-                    <ul class="header__categories">
-                        <li class="header__category" data-aos="fade-down" data-aos-duration="800"><a href="#home"
-                                class="header__link animOpacity">Home</a></li>
-                        <li class="header__category" data-aos="fade-down" data-aos-duration="900"><a href="#about"
-                                class="header__link animOpacity">About</a></li>
-                        <li class="header__category" data-aos="fade-down" data-aos-duration="1000"><a href="#skills"
-                                class="header__link animOpacity">Skills</a></li>
-                        <li class="header__category" data-aos="fade-down" data-aos-duration="1100"><a href="#projects"
-                                class="header__link animOpacity">Projects</a></li>
-                        <li class="header__category" data-aos="fade-down" data-aos-duration="1200"><a href="#contacts"
-                                class="header__link animOpacity">Contact</a></li>
-                        <!-- <li class="header__category" data-aos="fade-down" data-aos-duration="1300"><a href=""
-                                class="header__link header__link_border animOpacity">Resume</a></li> -->
-                    </ul>
-                </nav>
-                <img src="<%=require('./images/sun.svg')%>" data-aos="zoom-in" data-aos-duration="800" alt="dark-mode"
-                    class="header__theme-icon">
-                <img src="<%=require('./images/menu-white.svg')%>" data-aos="zoom-in" data-aos-duration="800"
-                    alt="dark-mode" class="header__menu-icon">
-            </div>
-        </header>
-        <main class="main">
-            <section class="intro">
-                <div class="intro__text-container">
-                    <h1 class="intro__title" data-aos="fade-up" data-aos-duration="800">Alfi Naim</h1>
-                    <h2 class="intro__subtitle" data-aos="fade-up" data-aos-duration="1000">Full Stack web developer /
-                        Android application developer</h2>
-                </div>
-            </section>
-            <section class="about" id="about">
-                <h2 class="about__title" data-aos="fade-up" data-aos-duration="800">About</h2>
-                <div class="about__container">
-                    <div class="about__text-container">
-                        <p class="about__text" data-aos="fade-up" data-aos-duration="800">Hello I'm Alfi, I'm web and
-                            application developer with a lot of experience in app development. I live in Yavne, married
-                            and the father of a one-year-old girl. I like to develop apps and websites in my spare time,
-                            like to learn new things and challenge myself.</p>
-                        <p class="about__text" data-aos="fade-up" data-aos-duration="800">For the past three years I
-                            have been working for a financial company in Bnei Brak as an app developer for Android. In
-                            collaboration with the web development team.</p>
-                        <p class="about__text" data-aos="fade-up" data-aos-duration="800">Recently I have finished
-                            Pructicum’s 8-month intensive program designed to train talents to be successful Web
-                            Developers. And right now I'm looking for my way in web development.</p>
-                    </div>
-                    <img src="<%=require('./images/profile-pic.jpg')%>" data-aos="zoom-in" data-aos-duration="800"
-                        alt="alfi naim" class="about__image">
-                </div>
-            </section>
-            <section class="skills" id="skills">
-                <h2 class="skills__title" data-aos="fade-up" data-aos-duration="800">Skills</h2>
-                <ul class="skills__list">
-                    <li class="skill" data-aos="flip-left" data-aos-duration="400">
-                        <img src="<%=require('./images/html.svg')%>" alt="html" class="skill__image">
-                        <p class="skill__text">HTML</p>
+<body class="page" id="home">
+    <header class="header">
+        <img src="./" alt="" class="logo">
+        <div class="header__container">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item" data-aos="fade-down" data-aos-duration="800">
+                        <a href="#home" class="navigation__link">Home</a>
                     </li>
-                    <li class="skill" data-aos="flip-left" data-aos-duration="400">
-                        <img src="<%=require('./images/css.svg')%>" alt="css" class="skill__image">
-                        <p class="skill__text">CSS</p>
+                    <li class="navigation__item" data-aos="fade-down" data-aos-duration="900">
+                        <a href="#about" class="navigation__link">About</a>
                     </li>
-                    <li class="skill" data-aos="flip-left" data-aos-duration="400">
-                        <img src="<%=require('./images/js.svg')%>" alt="javaScript" class="skill__image">
-                        <p class="skill__text">JS</p>
+                    <li class="navigation__item" data-aos="fade-down" data-aos-duration="1000">
+                        <a href="#skills" class="navigation__link">Skills</a>
                     </li>
-                    <li class="skill" data-aos="flip-left" data-aos-duration="400">
-                        <img src="<%=require('./images/react.svg')%>" alt="react" class="skill__image">
-                        <p class="skill__text">React</p>
+                    <li class="navigation__item" data-aos="fade-down" data-aos-duration="1100">
+                        <a href="#projects" class="navigation__link">Projects</a>
                     </li>
-                    <li class="skill" data-aos="flip-left" data-aos-duration="1000">
-                        <img src="<%=require('./images/nodejs.svg')%>" alt="nodejs" class="skill__image">
-                        <p class="skill__text">NodeJS</p>
-                    </li>
-                    <li class="skill" data-aos="flip-left" data-aos-duration="1000">
-                        <img src="<%=require('./images/mongo.svg')%>" alt="mongodb" class="skill__image">
-                        <p class="skill__text">MongoDB</p>
-                    </li>
-                    <li class="skill" data-aos="flip-left" data-aos-duration="1000">
-                        <img src="<%=require('./images/git.svg')%>" alt="git" class="skill__image">
-                        <p class="skill__text">Git</p>
-                    </li>
-                    <li class="skill" data-aos="flip-left" data-aos-duration="1500">
-                        <img src="<%=require('./images/java.svg')%>" alt="java" class="skill__image">
-                        <p class="skill__text">Java</p>
-                    </li>
-                    <li class="skill" data-aos="flip-left" data-aos-duration="1500">
-                        <img src="<%=require('./images/android.svg')%>" alt="android" class="skill__image">
-                        <p class="skill__text">Android</p>
-                    </li>
-                    <li class="skill" data-aos="flip-left" data-aos-duration="1500">
-                        <img src="<%=require('./images/firebase.svg')%>" alt="firebase" class="skill__image">
-                        <p class="skill__text">Firebase</p>
-                    </li>
-                </ul>
-            </section>
-            <section class="projects" id="projects">
-                <h2 class="projects__title" data-aos="fade-up" data-aos-duration="800">Projects</h2>
-                <ul class="project__list">
-                    <li class="project" data-aos="zoom-out-down" data-aos-duration="900">
-                        <img src="<%=require('./images/news-explorer.png')%>" alt="news-explorer"
-                            class="project__image">
-                        <div class="project__overlay">
-                            <div class="project__text-container">
-                                <h3 class="project__title">News Explorer</h3>
-                                <p class="project__tech">React | MongoDB | Express | Node.js | Google Cloud | Figma</p>
-                            </div>
-                            <div class="project__icon-container">
-                                <a href="https://github.com/Alfi-Naim/news-explorer-frontend" target="_blank"><img
-                                        src="<%=require('./images/github-white.svg')%>" alt="github"
-                                        class="project__icon animOpacity"></a>
-                                <a href="https://alfons-news-app.students.nomoreparties.sbs" target="_blank"><img
-                                        src="<%=require('./images/export-white.svg')%>" alt="site link"
-                                        class="project__icon animOpacity"></a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="project" data-aos="zoom-out-down" data-aos-duration="1100">
-                        <img src="<%=require('./images/around-us.png')%>" alt="around the u.s" class="project__image">
-                        <div class="project__overlay">
-                            <div class="project__text-container">
-                                <h3 class="project__title">Around The U.S</h3>
-                                <p class="project__tech">React | MongoDB | Express | Node.js | Google Cloud | Figma</p>
-                            </div>
-                            <div class="project__icon-container">
-                                <a href="https://github.com/Alfi-Naim/react-around-api-full" target="_blank"><img
-                                        src="<%=require('./images/github-white.svg')%>" alt="github"
-                                        class="project__icon animOpacity"></a>
-                                <a href="https://alfons.students.nomoreparties.sbs" target="_blank"><img
-                                        src="<%=require('./images/export-white.svg')%>" alt="site link"
-                                        class="project__icon animOpacity"></a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="project" data-aos="zoom-out-down" data-aos-duration="1300">
-                        <img src="<%=require('./images/portland.png')%>" alt="from portland to portland"
-                            class="project__image">
-                        <div class="project__overlay">
-                            <div class="project__text-container">
-                                <h3 class="project__title">Portland to Portland</h3>
-                                <p class="project__tech">HTML | CSS | Figma</p>
-                            </div>
-                            <div class="project__icon-container">
-                                <a href="https://github.com/Alfi-Naim/web_project_3" target="_blank"><img
-                                        src="<%=require('./images/github-white.svg')%>" alt="github"
-                                        class="project__icon animOpacity"></a>
-                                <a href="https://alfi-naim.github.io/web_project_3/" target="_blank"><img
-                                        src="<%=require('./images/export-white.svg')%>" alt="site link"
-                                        class="project__icon animOpacity"></a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            <section class="contacts" id="contacts">
-                <h2 class="contacts__title" data-aos="fade-up" data-aos-duration="800">Get In Touch</h2>
-                <p class="contacts__text" data-aos="fade-up" data-aos-duration="1100">I am open to new job opportunities
-                    in the Web field, contact me by email to hire me or just say hi :)</p>
-                <button class="contacts__button animOpacity" data-aos="fade-up" data-aos-duration="1300">
-                    <a href="mailto:alfons.devs@gmail.com" class="contacts__link">
-                        Email me
-                    </a>
-                </button>
-            </section>
-        </main>
-        <footer class="footer">
-            <p class="footer__text">Design and built by Alfi Naim © 2022</p>
-        </footer>
-        <div class="sidenav">
-            <ul class="sidenav__social-icons">
-                <li class="sidenav__social-icon" data-aos="flip-left" data-aos-duration="500">
-                    <a href="https://github.com/Alfi-Naim" target="_blank" class="sidenav__icon-link">
-                        <img src="<%=require('./images/github-white.svg')%>" alt="github"
-                            class="sidenav__icon sidenav__icon_type_github animOpacity">
-                    </a>
-                </li>
-                <li class="sidenav__social-icon" data-aos="flip-left" data-aos-duration="800">
-                    <a href="https://www.linkedin.com/in/alfi-naim/" target="_blank" class="sidenav__icon-link">
-                        <img src="<%=require('./images/linkedin.svg')%>" alt="linkedin"
-                            class="sidenav__icon sidenav__icon_type_linkedin animOpacity">
-                    </a>
-                </li>
-                <li class="sidenav__social-icon" data-aos="flip-left" data-aos-duration="1200">
-                    <a href="mailto:alfons.devs@gmail.com" class="sidenav__icon-link">
-                        <img src="<%=require('./images/email-white.svg')%>" alt="email"
-                            class="sidenav__icon sidenav__icon_type_email animOpacity">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <aside class="menu">
-            <div class="menu__button-wrapper">
-                <img alt="" class="menu__close-icon">
-            </div>
-            <nav class="menu__nav">
-                <ul class="menu__categories">
-                    <li class="menu__category">
-                        <a href="#home" class="menu__link">Home</a>
-                    </li>
-                    <li class="menu__category">
-                        <a href="#about" class="menu__link">About</a>
-                    </li>
-                    <li class="menu__category">
-                        <a href="#skills" class="menu__link">Skills</a>
-                    </li>
-                    <li class="menu__category">
-                        <a href="#projects" class="menu__link">Projects</a>
-                    </li>
-                    <li class="menu__category">
-                        <a href="#contacts" class="menu__link">Contact</a>
-                    </li>
-                    <!-- <li class="menu__category">
-                        <a href="" class="menu__link">Resume</a>
-                    </li> -->
-                </ul>
-                <ul class="menu__icons">
-                    <li class="menu__social-icon">
-                        <a href="https://github.com/Alfi-Naim" target="_blank" class="menu__icon-link">
-                            <img src="<%=require('./images/github-white.svg')%>" alt="github"
-                                class="menu__icon menu__icon_type_github animOpacity">
-                        </a>
-                    </li>
-                    <li class="menu__social-icon">
-                        <a href="https://www.linkedin.com/in/alfi-naim/" target="_blank" class="menu__icon-link">
-                            <img src="<%=require('./images/linkedin.svg')%>" alt="linkedin"
-                                class="menu__icon menu__icon_type_linkedin animOpacity">
-                        </a>
-                    </li>
-                    <li class="menu__social-icon">
-                        <a href="mailto:alfons.devs@gmail.com" class="menu__icon-link">
-                            <img src="<%=require('./images/email-white.svg')%>" alt="email"
-                                class="menu__icon menu__icon_type_email animOpacity">
-                        </a>
+                    <li class="navigation__item" data-aos="fade-down" data-aos-duration="1200">
+                        <a href="#contacts" class="navigation__link">Contact</a>
                     </li>
                 </ul>
             </nav>
-        </aside>
+            <img class="header__icon header__icon_type_theme" src="<%=require('./images/sun.svg')%>" data-aos="zoom-in" data-aos-duration="800" alt="theme">
+            <img class="header__icon header__icon_type_menu" src="<%=require('./images/menu-white.svg')%>" data-aos="zoom-in" data-aos-duration="800" alt="menu">
+        </div>
+    </header>
+    <main class="main">
+        <section class="intro">
+            <div class="intro__text-container">
+                <h1 class="intro__title" data-aos="fade-up" data-aos-duration="800">Alfi Naim</h1>
+                <h2 class="intro__subtitle" data-aos="fade-up" data-aos-duration="1000">Full Stack web developer / Android application developer</h2>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <h2 class="about__title" data-aos="fade-up" data-aos-duration="800">About</h2>
+            <div class="about__container">
+                <div class="about__text-container">
+                    <p class="about__text" data-aos="fade-up" data-aos-duration="800">Hello I'm Alfi, I'm web and
+                        application developer with a lot of experience in app development. I live in Yavne, married
+                        and the father of a one-year-old girl. I like to develop apps and websites in my spare time,
+                        like to learn new things and challenge myself.</p>
+                    <p class="about__text" data-aos="fade-up" data-aos-duration="800">For the past three years I
+                        have been working for a financial company in Bnei Brak as an app developer for Android. In
+                        collaboration with the web development team.</p>
+                    <p class="about__text" data-aos="fade-up" data-aos-duration="800">Recently I have finished
+                        Pructicum’s 8-month intensive program designed to train talents to be successful Web
+                        Developers. And right now I'm looking for my way in web development.</p>
+                </div>
+                <img class="about__image" src="<%=require('./images/profile-pic.jpg')%>" data-aos="zoom-in" data-aos-duration="800"
+                    alt="alfi naim">
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <h2 class="skills__title" data-aos="fade-up" data-aos-duration="800">Skills</h2>
+            <ul class="skills__list">
+                <li class="skill" data-aos="flip-left" data-aos-duration="400">
+                    <img src="<%=require('./images/html.svg')%>" alt="html" class="skill__image">
+                    <p class="skill__text">HTML</p>
+                </li>
+                <li class="skill" data-aos="flip-left" data-aos-duration="400">
+                    <img src="<%=require('./images/css.svg')%>" alt="css" class="skill__image">
+                    <p class="skill__text">CSS</p>
+                </li>
+                <li class="skill" data-aos="flip-left" data-aos-duration="400">
+                    <img src="<%=require('./images/js.svg')%>" alt="javaScript" class="skill__image">
+                    <p class="skill__text">JS</p>
+                </li>
+                <li class="skill" data-aos="flip-left" data-aos-duration="400">
+                    <img src="<%=require('./images/react.svg')%>" alt="react" class="skill__image">
+                    <p class="skill__text">React</p>
+                </li>
+                <li class="skill" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="<%=require('./images/nodejs.svg')%>" alt="nodejs" class="skill__image">
+                    <p class="skill__text">NodeJS</p>
+                </li>
+                <li class="skill" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="<%=require('./images/mongo.svg')%>" alt="mongodb" class="skill__image">
+                    <p class="skill__text">MongoDB</p>
+                </li>
+                <li class="skill" data-aos="flip-left" data-aos-duration="1000">
+                    <img src="<%=require('./images/git.svg')%>" alt="git" class="skill__image">
+                    <p class="skill__text">Git</p>
+                </li>
+                <li class="skill" data-aos="flip-left" data-aos-duration="1500">
+                    <img src="<%=require('./images/java.svg')%>" alt="java" class="skill__image">
+                    <p class="skill__text">Java</p>
+                </li>
+                <li class="skill" data-aos="flip-left" data-aos-duration="1500">
+                    <img src="<%=require('./images/android.svg')%>" alt="android" class="skill__image">
+                    <p class="skill__text">Android</p>
+                </li>
+                <li class="skill" data-aos="flip-left" data-aos-duration="1500">
+                    <img src="<%=require('./images/firebase.svg')%>" alt="firebase" class="skill__image">
+                    <p class="skill__text">Firebase</p>
+                </li>
+            </ul>
+        </section>
+        <section class="projects" id="projects">
+            <h2 class="projects__title" data-aos="fade-up" data-aos-duration="800">Projects</h2>
+            <ul class="project__list">
+                <li class="project" data-aos="zoom-out-down" data-aos-duration="900">
+                    <img src="<%=require('./images/news-explorer.png')%>" alt="news-explorer" class="project__image">
+                    <div class="project__overlay">
+                        <div class="project__text-container">
+                            <h3 class="project__title">News Explorer</h3>
+                            <p class="project__tech">React | MongoDB | Express | Node.js | Google Cloud | Figma</p>
+                        </div>
+                        <div class="project__icon-container">
+                            <a href="https://github.com/Alfi-Naim/news-explorer-frontend" target="_blank"><img
+                                    src="<%=require('./images/github-white.svg')%>" alt="github"
+                                    class="project__icon animOpacity"></a>
+                            <a href="https://alfons-news-app.students.nomoreparties.sbs" target="_blank"><img
+                                    src="<%=require('./images/export-white.svg')%>" alt="site link"
+                                    class="project__icon animOpacity"></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="project" data-aos="zoom-out-down" data-aos-duration="1100">
+                    <img src="<%=require('./images/around-us.png')%>" alt="around the u.s" class="project__image">
+                    <div class="project__overlay">
+                        <div class="project__text-container">
+                            <h3 class="project__title">Around The U.S</h3>
+                            <p class="project__tech">React | MongoDB | Express | Node.js | Google Cloud | Figma</p>
+                        </div>
+                        <div class="project__icon-container">
+                            <a href="https://github.com/Alfi-Naim/react-around-api-full" target="_blank"><img
+                                    src="<%=require('./images/github-white.svg')%>" alt="github"
+                                    class="project__icon animOpacity"></a>
+                            <a href="https://alfons.students.nomoreparties.sbs" target="_blank"><img
+                                    src="<%=require('./images/export-white.svg')%>" alt="site link"
+                                    class="project__icon animOpacity"></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="project" data-aos="zoom-out-down" data-aos-duration="1300">
+                    <img src="<%=require('./images/portland.png')%>" alt="from portland to portland"
+                        class="project__image">
+                    <div class="project__overlay">
+                        <div class="project__text-container">
+                            <h3 class="project__title">Portland to Portland</h3>
+                            <p class="project__tech">HTML | CSS | Figma</p>
+                        </div>
+                        <div class="project__icon-container">
+                            <a href="https://github.com/Alfi-Naim/web_project_3" target="_blank"><img
+                                    src="<%=require('./images/github-white.svg')%>" alt="github"
+                                    class="project__icon animOpacity"></a>
+                            <a href="https://alfi-naim.github.io/web_project_3/" target="_blank"><img
+                                    src="<%=require('./images/export-white.svg')%>" alt="site link"
+                                    class="project__icon animOpacity"></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="contacts" id="contacts">
+            <h2 class="contacts__title" data-aos="fade-up" data-aos-duration="800">Get In Touch</h2>
+            <p class="contacts__text" data-aos="fade-up" data-aos-duration="1100">I am open to new job opportunities
+                in the Web field, contact me by email to hire me or just say hi :)</p>
+            <button class="contacts__button animOpacity" data-aos="fade-up" data-aos-duration="1300">
+                <a href="mailto:alfons.devs@gmail.com" class="contacts__link">
+                    Email me
+                </a>
+            </button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Design and built by Alfi Naim © 2022</p>
+    </footer>
+    <div class="sidenav">
+        <ul class="sidenav__social-icons">
+            <li class="sidenav__social-icon" data-aos="flip-left" data-aos-duration="500">
+                <a href="https://github.com/Alfi-Naim" target="_blank" class="sidenav__icon-link">
+                    <img src="<%=require('./images/github-white.svg')%>" alt="github"
+                        class="sidenav__icon sidenav__icon_type_github animOpacity">
+                </a>
+            </li>
+            <li class="sidenav__social-icon" data-aos="flip-left" data-aos-duration="800">
+                <a href="https://www.linkedin.com/in/alfi-naim/" target="_blank" class="sidenav__icon-link">
+                    <img src="<%=require('./images/linkedin.svg')%>" alt="linkedin"
+                        class="sidenav__icon sidenav__icon_type_linkedin animOpacity">
+                </a>
+            </li>
+            <li class="sidenav__social-icon" data-aos="flip-left" data-aos-duration="1200">
+                <a href="mailto:alfons.devs@gmail.com" class="sidenav__icon-link">
+                    <img src="<%=require('./images/email-white.svg')%>" alt="email"
+                        class="sidenav__icon sidenav__icon_type_email animOpacity">
+                </a>
+            </li>
+        </ul>
     </div>
+    <aside class="menu">
+        <div class="menu__button-wrapper">
+            <img alt="" class="menu__close-icon">
+        </div>
+        <nav class="menu__nav">
+            <ul class="menu__categories">
+                <li class="menu__category">
+                    <a href="#home" class="menu__link">Home</a>
+                </li>
+                <li class="menu__category">
+                    <a href="#about" class="menu__link">About</a>
+                </li>
+                <li class="menu__category">
+                    <a href="#skills" class="menu__link">Skills</a>
+                </li>
+                <li class="menu__category">
+                    <a href="#projects" class="menu__link">Projects</a>
+                </li>
+                <li class="menu__category">
+                    <a href="#contacts" class="menu__link">Contact</a>
+                </li>
+            </ul>
+            <ul class="menu__icons">
+                <li class="menu__social-icon">
+                    <a href="https://github.com/Alfi-Naim" target="_blank" class="menu__icon-link">
+                        <img src="<%=require('./images/github-white.svg')%>" alt="github"
+                            class="menu__icon menu__icon_type_github animOpacity">
+                    </a>
+                </li>
+                <li class="menu__social-icon">
+                    <a href="https://www.linkedin.com/in/alfi-naim/" target="_blank" class="menu__icon-link">
+                        <img src="<%=require('./images/linkedin.svg')%>" alt="linkedin"
+                            class="menu__icon menu__icon_type_linkedin animOpacity">
+                    </a>
+                </li>
+                <li class="menu__social-icon">
+                    <a href="mailto:alfons.devs@gmail.com" class="menu__icon-link">
+                        <img src="<%=require('./images/email-white.svg')%>" alt="email"
+                            class="menu__icon menu__icon_type_email animOpacity">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
 </body>
 
 </html>

@@ -54,7 +54,7 @@ function toggleTheme() {
 
 function initTheme() {
   if (darkmode == "dark") {
-    page.classList.remove("light-theme");
+    page.classList.remove("page_theme_light");
     themeIcon.setAttribute("src", sun);
     asideGithubIcon.setAttribute("src", githubWhite);
     asideLinkedInIcon.setAttribute("src", linkedInWhite);
@@ -65,7 +65,7 @@ function initTheme() {
     menuIcon.setAttribute("src", menuWhite);
     menuCloseIcon.setAttribute("src", closeMenuWhite);
   } else {
-    page.classList.add("light-theme");
+    page.classList.add("page_theme_light");
     themeIcon.setAttribute("src", moon);
     asideGithubIcon.setAttribute("src", githubBlack);
     asideLinkedInIcon.setAttribute("src", linkedInBlack);
