@@ -304,15 +304,26 @@
     text-align: center;
 }
 
-.contacts__button {
-    margin-top: 54px;
+.contacts__link {
+    text-decoration: none;
+    background-color: var(--oposite-color);
+    padding: 12px 60px 12px 60px;
     color: var(--main-color);
-    padding: 18px 60px 18px 60px;
     border-radius: 6px;
     border: 1px solid var(--main-color);
-    background-color: #000;
     cursor: pointer;
-    transition: opacity 0.4s ease-in-out;
+    transition: background-color 1s;
+}
+
+.contacts__button {
+    margin-top: 54px;
+    border: none;
+    background-color: transparent;
+}
+
+.contacts__link:hover {
+    background-color: var(--main-color);
+    color: var(--oposite-color);
 }
 
 .footer {
@@ -387,7 +398,7 @@
 }
 
 .menu__nav {
-    color: var(--opposite-color);
+    color: var(--oposite-color);
     background-color: var(--menu-color);
     width: 70%;
     position: relative;
@@ -554,6 +565,8 @@
         left: 0;
         right: 0;
         height: 50px;
+        z-index: 1;
+        background-color: var(--menu-color);
     }
 
     .header__categories {

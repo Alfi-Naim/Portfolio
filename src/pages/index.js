@@ -21,9 +21,9 @@ const menuBlack = new URL("../images/menu-black.svg", import.meta.url);
 const closeMenuWhite = new URL("../images/close-white.svg", import.meta.url);
 const closeMenuBlack = new URL("../images/close-black.svg", import.meta.url);
 
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-};
+// window.onbeforeunload = function () {
+//   window.scrollTo(0, 0);
+// };
 
 AOS.init({
   easing: "ease-in-out",

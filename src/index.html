@@ -9,12 +9,23 @@
     <script src="bower_components/aos/dist/aos.js"></script>
 
     <title>Document</title>
+    <style>
+        .logo {
+            color: black;
+        }
+
+        .testColor {
+            color: #fff;
+            fill: #fff;
+        }
+    </style>
 </head>
 
 <body class="page">
     <div class="page-content" id="home">
         <header class="header">
-            <img src="" alt="" class="logo">
+            <img src="<%=require('./images/sun copy.svg')%>" style="height: 24px; width: 24px; color: white;" alt="" class="logo">
+            <!-- <img src="./" alt="" class="logo"> -->
             <div class="header__container">
                 <nav class="header__menu">
                     <ul class="header__categories">
@@ -28,8 +39,8 @@
                                 class="header__link animOpacity">Projects</a></li>
                         <li class="header__category" data-aos="fade-down" data-aos-duration="1200"><a href="#contacts"
                                 class="header__link animOpacity">Contact</a></li>
-                        <li class="header__category" data-aos="fade-down" data-aos-duration="1300"><a href=""
-                                class="header__link header__link_border animOpacity">Resume</a></li>
+                        <!-- <li class="header__category" data-aos="fade-down" data-aos-duration="1300"><a href=""
+                                class="header__link header__link_border animOpacity">Resume</a></li> -->
                     </ul>
                 </nav>
                 <img src="<%=require('./images/sun.svg')%>" data-aos="zoom-in" data-aos-duration="800" alt="dark-mode"
@@ -172,8 +183,11 @@
                 <h2 class="contacts__title" data-aos="fade-up" data-aos-duration="800">Get In Touch</h2>
                 <p class="contacts__text" data-aos="fade-up" data-aos-duration="1100">I am open to new job opportunities
                     in the Web field, contact me by email to hire me or just say hi :)</p>
-                <button class="contacts__button animOpacity" data-aos="fade-up" data-aos-duration="1300">Email
-                    Me</button>
+                <button class="contacts__button animOpacity" data-aos="fade-up" data-aos-duration="1300">
+                    <a href="mailto:alfons.devs@gmail.com" class="contacts__link">
+                        Email me
+                    </a>
+                </button>
             </section>
         </main>
         <footer class="footer">
@@ -222,9 +236,9 @@
                     <li class="menu__category">
                         <a href="#contacts" class="menu__link">Contact</a>
                     </li>
-                    <li class="menu__category">
+                    <!-- <li class="menu__category">
                         <a href="" class="menu__link">Resume</a>
-                    </li>
+                    </li> -->
                 </ul>
                 <ul class="menu__icons">
                     <li class="menu__social-icon">
