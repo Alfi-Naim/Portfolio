@@ -1,0 +1,24 @@
+.skills__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 80px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 580px) {
+
+    .skills__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 446px) {
+
+    .skills__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

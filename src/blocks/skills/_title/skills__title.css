@@ -1,0 +1,13 @@
+.skills__title {
+    color: var(--main-color);
+    font-size: 78px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 580px) {
+
+    .skills__title {
+        font-size: 68px;
+    }
+}

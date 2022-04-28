@@ -27,6 +27,13 @@
 @import url(../blocks/about/__text/about__text.css);
 @import url(../blocks/about/__image/about__image.css);
 
+@import url(../blocks/skills/skills.css);
+@import url(../blocks/skills/_title/skills__title.css);
+@import url(../blocks/skills/__list/skills__list.css);
+@import url(../blocks/skill/skill.css);
+@import url(../blocks/skill/__image/skill__image.css);
+@import url(../blocks/skill/__text/skill__text.css);
+
 .projects {
     min-height: 100vh;
     display: flex;
@@ -114,47 +121,6 @@
 .project__icon:last-of-type {
     width: 24px;
     height: 24px;
-}
-
-.skills {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.skills__title {
-    color: var(--main-color);
-    font-size: 78px;
-    font-family: 'Bebas Neue', cursive;
-    font-weight: 400;
-}
-
-.skills__list {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 80px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.skill {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.skill__image {
-    width: 70px;
-    height: 70px;
-}
-
-.skill__text {
-    color: var(--main-color);
 }
 
 .contacts {
@@ -429,16 +395,8 @@
         font-size: 68px;
     }
 
-    .skills__title {
-        font-size: 68px;
-    }
-
     .contacts__title {
         font-size: 68px;
-    }
-
-    .skills__list {
-        grid-template-columns: repeat(3, 1fr);
     }
 
     .project__list {
@@ -449,10 +407,6 @@
 }
 
 @media screen and (max-width: 446px) {
-
-    .skills__list {
-        grid-template-columns: repeat(2, 1fr);
-    }
 
     .project__list {
         width: 75%;
