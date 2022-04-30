@@ -1,0 +1,7 @@
+.social__link {
+    text-decoration: none;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,7 +1,7 @@
 import AOS from "aos";
 import "./index.css";
 
-import MenuPopup from "../components/MenuPopup";
+import Menu from "../components/Menu";
 
 const sun = new URL("../images/sun.svg", import.meta.url);
 const moon = new URL("../images/moon.svg", import.meta.url);
@@ -18,12 +18,9 @@ const emailBlack = new URL("../images/email-black.svg", import.meta.url);
 const menuWhite = new URL("../images/menu-white.svg", import.meta.url);
 const menuBlack = new URL("../images/menu-black.svg", import.meta.url);
 
-const closeMenuWhite = new URL("../images/close-white.svg", import.meta.url);
-const closeMenuBlack = new URL("../images/close-black.svg", import.meta.url);
-
-// window.onbeforeunload = function () {
-//   window.scrollTo(0, 0);
-// };
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
 
 AOS.init({
   easing: "ease-in-out",
@@ -34,17 +31,13 @@ let darkmode = localStorage.getItem("theme");
 if (darkmode == null) darkmode = "dark";
 
 const page = document.querySelector(".page");
-const themeIcon = document.querySelector(".header__theme-icon");
-const menuIcon = document.querySelector(".header__menu-icon");
-const asideGithubIcon = document.querySelector(".sidenav__icon_type_github");
-const asideLinkedInIcon = document.querySelector(".sidenav__icon_type_linkedin");
-const asideEmailIcon = document.querySelector(".sidenav__icon_type_email");
-const menuGithubIcon = document.querySelector(".menu__icon_type_github");
-const menuLinkedInIcon = document.querySelector(".menu__icon_type_linkedin");
-const menuEmailIcon = document.querySelector(".menu__icon_type_email");
-const menuCloseIcon = document.querySelector(".menu__close-icon");
+const themeIcon = document.querySelector(".header__icon_type_theme");
+const menuIcon = document.querySelector(".header__icon_type_menu");
+const asideGithubIcon = document.querySelectorAll(".social__icon_type_github");
+const asideLinkedInIcon = document.querySelectorAll(".social__icon_type_linkedin");
+const asideEmailIcon = document.querySelectorAll(".social__icon_type_email");
 
-const menuPopup = new MenuPopup(".menu", ".page", ".menu__link");
+const menu = new Menu();
 
 function toggleTheme() {
   darkmode = darkmode == "dark" ? "light" : "dark";
@@ -56,34 +49,35 @@ function initTheme() {
   if (darkmode == "dark") {
     page.classList.remove("page_theme_light");
     themeIcon.setAttribute("src", sun);
-    asideGithubIcon.setAttribute("src", githubWhite);
-    asideLinkedInIcon.setAttribute("src", linkedInWhite);
-    asideEmailIcon.setAttribute("src", emailWhite);   
-    menuGithubIcon.setAttribute("src", githubWhite);
-    menuLinkedInIcon.setAttribute("src", linkedInWhite);
-    menuEmailIcon.setAttribute("src", emailWhite);
+    asideGithubIcon.forEach(icon => {
+      icon.setAttribute("src", githubWhite);
+    });
+    asideLinkedInIcon.forEach(icon => {
+      icon.setAttribute("src", linkedInWhite);
+    });
+    asideEmailIcon.forEach(icon => {
+      icon.setAttribute("src", emailWhite);
+    });
     menuIcon.setAttribute("src", menuWhite);
-    menuCloseIcon.setAttribute("src", closeMenuWhite);
   } else {
     page.classList.add("page_theme_light");
     themeIcon.setAttribute("src", moon);
-    asideGithubIcon.setAttribute("src", githubBlack);
-    asideLinkedInIcon.setAttribute("src", linkedInBlack);
-    asideEmailIcon.setAttribute("src", emailBlack);
-    menuGithubIcon.setAttribute("src", githubBlack);
-    menuLinkedInIcon.setAttribute("src", linkedInBlack);
-    menuEmailIcon.setAttribute("src", emailBlack);
+    asideGithubIcon.forEach(icon => {
+      icon.setAttribute("src", githubBlack);
+    });
+    asideLinkedInIcon.forEach(icon => {
+      icon.setAttribute("src", linkedInBlack);
+    });
+    asideEmailIcon.forEach(icon => {
+      icon.setAttribute("src", emailBlack);
+    });
     menuIcon.setAttribute("src", menuBlack);
-    menuCloseIcon.setAttribute("src", closeMenuBlack);
   }
 }
 
 function openMenu() {
-  menuPopup.open();
-}
-
-function closeMenu() {
-  menuPopup.close;
+  if(menu.isOpen()) menu.close();
+  else menu.open();
 }
 
 themeIcon.addEventListener("click", toggleTheme);

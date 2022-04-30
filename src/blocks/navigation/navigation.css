@@ -1,0 +1,12 @@
+.navigation {
+    color: var(--oposite-color);
+    background-color: var(--menu-color);
+    width: 70%;
+    position: relative;
+    margin-top: 50px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,7 +1,5 @@
 .page_no-scroll {
     height: 100%;
     overflow: hidden;
-    pointer-events: none;
-    user-select: none;
     margin: 0;
 }

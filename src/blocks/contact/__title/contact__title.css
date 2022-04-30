@@ -1,0 +1,21 @@
+.contact__title {
+    color: var(--main-color);
+    font-size: 78px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+@media screen and (max-width: 580px) {
+
+    .contact__title {
+        font-size: 68px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    .contact__title {
+        text-align: center;
+    }
+}
