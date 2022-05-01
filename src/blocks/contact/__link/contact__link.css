@@ -6,7 +6,6 @@
     border-radius: 6px;
     border: 1px solid var(--main-color);
     cursor: pointer;
-    transition: background-color 1s;
 }
 
 .contact__link:hover {
