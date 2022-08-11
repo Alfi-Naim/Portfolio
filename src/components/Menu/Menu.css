@@ -1,0 +1,39 @@
+.menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    transition: all .5s ease;
+    justify-content: flex-end;
+    border-radius: 0;
+    z-index: 8;
+}
+
+.menu_opened {
+    pointer-events: all;
+    right: 0;
+}
+
+.menu__wrapper {
+    color: var(--oposite-color);
+    background-color: var(--menu-color);
+    width: 70%;
+    position: relative;
+    margin-top: 50px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 801px) {
+
+    .menu {
+        display: none;
+    }
+}

@@ -1,0 +1,134 @@
+.intro {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.intro__title {
+    font-size: 80px;
+    font-family: 'Staatliches';
+    letter-spacing: 12px;
+    margin: 30px 0;
+}
+
+.intro__subtitle {
+    font-size: 60px;
+    font-family: 'Staatliches';
+    letter-spacing: 8px;
+    color: #a19997;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.intro__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro__image {
+    width: 250px;
+    height: 250px;
+}
+
+.image__container {
+    position: relative;
+}
+
+.intro__button {
+    font-size: 20px;
+    font-family: 'Staatliches';
+    letter-spacing: 8px;
+    color: var(--main-color);
+    background-color: transparent;
+    padding: 12px 30px;
+    border: 2px solid var(--main-color);
+    transition: all .3s ease-in-out;
+}
+
+.intro__button:hover {
+    color: var(--oposite-color);
+    background-color: var(--main-color);
+}
+
+.note {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    font-size: 35px;
+    opacity: 0;
+    animation: notes 2s infinite linear;
+}
+
+.note-1 {
+    top: 18%;
+    left: 56%;
+    animation-delay: 1s;
+}
+
+.note-2 {
+    top: 30%;
+    left: 62%;
+    animation-delay: 1.5s;
+}
+
+@media screen and (max-width: 1125px) {
+
+    .intro {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 54px;
+    }
+
+    .image__container {
+        display: none;
+    }
+
+    .intro__title {
+        font-size: 70px;
+    }
+
+    .intro__subtitle {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 910px) {
+
+    .intro__subtitle {
+        font-size: 44px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .intro__title {
+        font-size: 50px;
+        letter-spacing: 6px;
+    }
+
+    .intro__subtitle {
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+}
+
+@keyframes notes {
+    0% {
+        transform: scale(1) translate(0, 0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.5) translate(60%, -55%);
+    }
+
+    100% {
+        transform: scale(1.5) translate(100%, -100%);
+        opacity: 0;
+    }
+}

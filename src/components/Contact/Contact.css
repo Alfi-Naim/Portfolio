@@ -1,0 +1,98 @@
+.contact {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__title {
+    font-size: 78px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.contact__text {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 480px;
+    text-align: center;
+    margin-bottom: 54px;
+}
+
+.contact__link {
+    text-decoration: none;
+    background-color: var(--oposite-color);
+    padding: 12px 60px 12px 60px;
+    border-radius: 6px;
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+}
+
+.contact__link:hover {
+    background-color: var(--main-color);
+    color: var(--oposite-color);
+}
+
+.contact__button {
+    margin-top: 22px;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: var(--main-color);
+    color: var(--oposite-color);
+    cursor: pointer;
+    border: 1px solid var(--main-color);
+    transition: all 0.3s;
+}
+
+.contact__button:hover {
+    background-color: var(--oposite-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);;
+}
+
+.contact__form {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact__input {
+    border: none;
+    background-color: var(--menu-color);
+    font-size: 12px;
+    padding: 12px;
+    color: #fff;
+}
+
+.contact__textarea {
+    resize: none;
+    border: none;
+    background-color: var(--menu-color);
+    font-size: 12px;
+    padding: 8px;
+    color: #fff;
+}
+
+@media screen and (max-width: 580px) {
+
+    .contact__title {
+        font-size: 68px;
+    }
+
+    .contact__form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    .contact__title {
+        text-align: center;
+    }
+}
