@@ -17,7 +17,7 @@
     font-size: 60px;
     font-family: 'Staatliches';
     letter-spacing: 8px;
-    color: #a19997;
+    color: #007bff;
     margin-top: 30px;
     margin-bottom: 0;
 }
@@ -46,6 +46,7 @@
     padding: 12px 30px;
     border: 2px solid var(--main-color);
     transition: all .3s ease-in-out;
+    cursor: pointer;
 }
 
 .intro__button:hover {

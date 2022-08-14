@@ -8,6 +8,7 @@ import moon from '../../images/moon.svg';
 
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { useContext } from 'react';
+import Bounce from 'react-reveal/Bounce';
 
 function Header({ onMenuClick, onThemeClick }) {
 
@@ -18,8 +19,10 @@ function Header({ onMenuClick, onThemeClick }) {
         <header className='header'>
             <div className="header__container">
                 <Navigation />
-                <img className="header__icon" src={darkMode ? sun : moon} alt={darkMode ? "sun" : "moon"} onClick={onThemeClick} />
-                <img className="header__icon header__icon_type_menu" src={darkMode ? menuWhite : menuBlack} alt="menu" onClick={onMenuClick} />
+                <Bounce>
+                    <img className="header__icon" src={darkMode ? sun : moon} alt={darkMode ? "sun" : "moon"} onClick={onThemeClick} />
+                    <img className="header__icon header__icon_type_menu" src={darkMode ? menuWhite : menuBlack} alt="menu" onClick={onMenuClick} />
+                </Bounce>
             </div>
         </header>
     );

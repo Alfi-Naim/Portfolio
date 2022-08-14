@@ -1,5 +1,5 @@
 .skills {
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,7 +16,7 @@
 .skills__list {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     row-gap: 80px;
     list-style: none;
     margin: 0;
@@ -28,6 +28,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-size: 18px;
 }
 
 .skill__image {
@@ -35,12 +36,19 @@
     height: 70px;
 }
 
+@media screen and (max-width: 880px) {
+
+    .skills__list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
 @media screen and (max-width: 580px) {
 
     .skills__list {
         grid-template-columns: repeat(3, 1fr);
     }
-
 }
 
 @media screen and (max-width: 446px) {

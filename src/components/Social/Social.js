@@ -1,4 +1,5 @@
 import './Social.css';
+import LightSpeed from 'react-reveal/LightSpeed';
 
 import githubWhite from '../../images/github-white.svg';
 import githubBlack from '../../images/github-black.svg';
@@ -20,24 +21,26 @@ function Social({ vertical }) {
     return (
         <div className="social">
             <ul className={`social__list ${vertical && 'social__list_orientation_vertical'}`}>
-                <li className="social__item" data-aos="flip-left" data-aos-duration="500">
-                    <a href="https://github.com/Alfi-Naim" target="_blank" className="social__link">
-                        <img src={darkMode ? githubWhite : githubBlack} alt="github"
-                            className="social__icon social__icon_type_github" />
-                    </a>
-                </li>
-                <li className="social__item" data-aos="flip-left" data-aos-duration="800">
-                    <a href="https://www.linkedin.com/in/alfi-naim/" target="_blank" className="social__link">
-                        <img src={darkMode ? linkedinWhite : linkedinBlack} alt="linkedin"
-                            className="social__icon social__icon_type_linkedin" />
-                    </a>
-                </li>
-                <li className="social__item" data-aos="flip-left" data-aos-duration="1200">
-                    <a href="mailto:alfons.devs@gmail.com" className="social__link">
-                        <img src={darkMode ? emailWhite : emailBlack} alt="email"
-                            className="social__icon social__icon_type_email" />
-                    </a>
-                </li>
+                <LightSpeed top>
+                    <li className="social__item" data-aos="flip-left" data-aos-duration="500">
+                        <a href="https://github.com/Alfi-Naim" target="_blank" className="social__link">
+                            <img src={darkMode ? githubWhite : githubBlack} alt="github"
+                                className="social__icon social__icon_type_github" />
+                        </a>
+                    </li>
+                    <li className="social__item" data-aos="flip-left" data-aos-duration="800">
+                        <a href="https://www.linkedin.com/in/alfi-naim/" target="_blank" className="social__link">
+                            <img src={darkMode ? linkedinWhite : linkedinBlack} alt="linkedin"
+                                className="social__icon social__icon_type_linkedin" />
+                        </a>
+                    </li>
+                    <li className="social__item" data-aos="flip-left" data-aos-duration="1200">
+                        <a href="mailto:alfons.devs@gmail.com" className="social__link">
+                            <img src={darkMode ? emailWhite : emailBlack} alt="email"
+                                className="social__icon social__icon_type_email" />
+                        </a>
+                    </li>
+                </LightSpeed>
             </ul>
         </div>
     );

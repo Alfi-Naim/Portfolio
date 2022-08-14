@@ -1,6 +1,7 @@
 import './Contact.css';
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import Fade from 'react-reveal/Fade';
 
 import { contact } from '../../utils/constants'
 
@@ -21,19 +22,23 @@ function Contact() {
             .catch((error) => {
                 console.log(error.text);
                 alert("Sorry some error occurred try, again");
-            })  
+            })
             .finally(() => setLoading(false));
     };
 
     return (
         <section className="contact" id="contact">
-            <h2 className="contact__title">{contact.title}</h2>
-            <p className="contact__text">{contact.text}</p>
+            <Fade top>
+                <h2 className="contact__title">{contact.title}</h2>
+                <p className="contact__text">{contact.text}</p>
+            </Fade>
             <form ref={form} onSubmit={sendEmail} className='contact__form'>
-                <input className='contact__input' placeholder='Name' type='text' name="name" />
-                <input className='contact__input' placeholder='Email' type='email' name="email" />
-                <textarea className='contact__textarea' placeholder='Message' type='text' maxLength="200" rows="5" name="message" />
-                <button className='contact__button' >{loading ? 'Loading...' : 'Email me'}</button>
+                <Fade top>
+                    <input className='contact__input' placeholder='Name' type='text' name="name" />
+                    <input className='contact__input' placeholder='Email' type='email' name="email" />
+                    <textarea className='contact__textarea' placeholder='Message' type='text' maxLength="200" rows="5" name="message" />
+                    <button className='contact__button' >{loading ? 'Loading...' : 'Email me'}</button>
+                </Fade>
             </form>
         </section>
     );
