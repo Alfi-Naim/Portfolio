@@ -1,13 +1,14 @@
 {
+  "homepage": "https://alfi-naim.github.io/Portfolio/",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alfi-naim.github.io/Portfolio/",
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-reveal": "^1.2.2",
@@ -40,8 +41,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
   }
 }
