@@ -73,14 +73,14 @@ export const projects = [
         "name": "News Explorer",
         "technologies" :"React | MongoDB | Express | Node.js | Google Cloud | Figma",
         "gitLink": "https://github.com/Alfi-Naim/news-explorer-frontend",
-        "siteLink": "https://alfi-explorer.students.nomoreparties.sbs/",
+        "siteLink": "https://naim-news.students.nomoredomainssbs.ru/",
         "image": explorer,
     },
     {
         "name": "Around The U.S",
         "technologies" :"React | MongoDB | Express | Node.js | Google Cloud | Figma",
         "gitLink": "https://github.com/Alfi-Naim/react-around-api-full",
-        "siteLink": "https://alfi-usa.students.nomoreparties.sbs/",
+        "siteLink": "https://naim-usa.students.nomoredomainssbs.ru/",
         "image": around,
     },
     {
