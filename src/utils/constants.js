@@ -12,6 +12,7 @@ import firebase from '../images/skills/firebase.svg'
 import around from '../images/projects/around-us.png'
 import explorer from '../images/projects/news-explorer.png'
 import portland from '../images/projects/portland.png'
+import shopit from '../images/projects/shopit.png'
 
 export const aboutText = {
     title: `About`,
@@ -67,8 +68,14 @@ export const skills = [
     },
 ]
 
-
 export const projects = [
+       {
+        "name": "Shopit",
+        "technologies" :"React | MongoDB | Express | Node.js | Google Cloud",
+        "gitLink": "https://github.com/Alfi-Naim/shopit",
+        "siteLink": "https://shopit-alfi.students.nomoredomainssbs.ru/signin",
+        "image": shopit,
+    },
     {
         "name": "News Explorer",
         "technologies" :"React | MongoDB | Express | Node.js | Google Cloud | Figma",
