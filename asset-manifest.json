@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.8bb879b6.css",
-    "main.js": "/Portfolio/static/js/main.bdbda7ed.js",
+    "main.css": "/Portfolio/static/css/main.140c783f.css",
+    "main.js": "/Portfolio/static/js/main.966b04de.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/news-explorer.png": "/Portfolio/static/media/news-explorer.5c864f142b631939fd2d.png",
     "static/media/around-us.png": "/Portfolio/static/media/around-us.e42271a89b2ccca1f66e.png",
     "static/media/profile-img.jpg": "/Portfolio/static/media/profile-img.ff41e11966190f23eb68.jpg",
+    "static/media/shopit.png": "/Portfolio/static/media/shopit.85719a1b01a30eccf6e3.png",
     "static/media/portland.png": "/Portfolio/static/media/portland.498cb1d3667f1a2018fc.png",
     "static/media/developer.svg": "/Portfolio/static/media/developer.b57c68b64290cc77f520a40882987e1e.svg",
     "static/media/java.svg": "/Portfolio/static/media/java.b4a0adbd9cd896d2c424c0d7b59f7962.svg",
@@ -34,12 +35,12 @@
     "static/media/html.svg": "/Portfolio/static/media/html.42c02db687dba9b4821fbac5c65e5296.svg",
     "static/media/linkedin-black.svg": "/Portfolio/static/media/linkedin-black.3ee401f31cc22c5c740d5041998148f7.svg",
     "static/media/linkedin-white.svg": "/Portfolio/static/media/linkedin-white.f362c95c60f4d0adc418029401bedb20.svg",
-    "main.8bb879b6.css.map": "/Portfolio/static/css/main.8bb879b6.css.map",
-    "main.bdbda7ed.js.map": "/Portfolio/static/js/main.bdbda7ed.js.map",
+    "main.140c783f.css.map": "/Portfolio/static/css/main.140c783f.css.map",
+    "main.966b04de.js.map": "/Portfolio/static/js/main.966b04de.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8bb879b6.css",
-    "static/js/main.bdbda7ed.js"
+    "static/css/main.140c783f.css",
+    "static/js/main.966b04de.js"
   ]
 }
