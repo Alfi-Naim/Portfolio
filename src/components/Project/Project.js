@@ -16,9 +16,9 @@ function Project({ project }) {
                     <a href={project.gitLink} target="_blank">
                         <img src={githubWhite} alt="github" className="project__icon" />
                     </a>
-                    <a href={project.siteLink} target="_blank">
+                    {/* <a href={project.siteLink} target="_blank">
                         <img src={exportWhite} alt="site link" className="project__icon" />
-                    </a>
+                    </a> */}
                 </div>
             </div>
         </li>
